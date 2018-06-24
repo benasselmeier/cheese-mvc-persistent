@@ -52,6 +52,7 @@ public class MenuController {
             return "menu/add";
         }
         else {
+            model.addAttribute(menu);
             menuDao.save(menu);
             return "redirect:view/" + menu.getId();
         }

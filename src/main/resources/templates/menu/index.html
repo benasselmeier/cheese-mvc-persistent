@@ -13,7 +13,8 @@
     <ul>
         <tr th:each="item : ${menu}">
             <li>
-                <td><a href = "/menu/view/${menu.id}">th:text="${item.name}"</a></td>
+                <!-- TODO: Link to the appropriate menu from this page. -->
+                <a href = "/menu/view/1"><td th:text="${item.name}"></td></a>
             </li>
         </tr>
     </ul>
