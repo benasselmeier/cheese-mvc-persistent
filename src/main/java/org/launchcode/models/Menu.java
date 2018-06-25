@@ -28,11 +28,6 @@ public class Menu {
 
     public Menu() { }
 
-    public Menu(String name){
-        this.name = name;
-    }
-
-
     //Getters and setters
 
     public int getId() {
@@ -45,10 +40,6 @@ public class Menu {
 
     public List<Cheese> getCheeses() {
         return cheeses;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setName(String name) {

@@ -19,7 +19,9 @@ public class AddMenuItemForm {
 
     public AddMenuItemForm () { }
 
-    public AddMenuItemForm(int menuId, int cheeseId) {
+    public AddMenuItemForm(Iterable<Cheese> cheeses, Menu menu) {
+        this.cheeses = cheeses;
+        this.menu = menu;
     }
 
     //Getters and setters
@@ -28,16 +30,8 @@ public class AddMenuItemForm {
         return menu;
     }
 
-    public void setMenu(Menu menu) {
-        this.menu = menu;
-    }
-
     public Iterable<Cheese> getCheeses() {
         return cheeses;
-    }
-
-    public void setCheeses(Iterable<Cheese> cheeses) {
-        this.cheeses = cheeses;
     }
 
     public int getMenuId() {
